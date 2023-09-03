@@ -1,0 +1,94 @@
+{
+  "name": "components-client-blog",
+  "version": "1.0.0",
+  "description": "Components to use in the project",
+  "author": "Denis Bareischev",
+  "license": "MIT",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "rollup": "rollup -c",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "lint-fix": "eslint --fix --ext .js,.jsx,.ts,.tsx src",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "*.{js,ts,jsx,tsx}": [
+      "yarn run lint-fix",
+      "prettier --write"
+    ]
+  },
+  "dependencies": {
+    "tslib": "^2.6.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.9",
+    "@babel/preset-env": "^7.22.9",
+    "@babel/preset-react": "^7.22.5",
+    "@babel/preset-typescript": "^7.22.5",
+    "@rollup/plugin-alias": "^5.0.0",
+    "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-commonjs": "^25.0.3",
+    "@rollup/plugin-node-resolve": "^15.1.0",
+    "@rollup/plugin-replace": "^5.0.2",
+    "@rollup/plugin-typescript": "^11.1.2",
+    "@storybook/addon-essentials": "7.0.27",
+    "@storybook/addon-interactions": "7.0.27",
+    "@storybook/addon-links": "7.0.27",
+    "@storybook/blocks": "7.0.27",
+    "@storybook/react": "7.0.27",
+    "@storybook/react-webpack5": "7.0.27",
+    "@storybook/testing-library": "0.0.14-next.2",
+    "@types/react": "^18.2.15",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "babel-jest": "^29.6.1",
+    "eslint": "^8.45.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^17.1.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-import-resolver-typescript": "^3.5.5",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "eslint-plugin-storybook": "^0.6.12",
+    "identity-obj-proxy": "^3.0.0",
+    "lint-staged": "^13.2.3",
+    "mrm": "2",
+    "prettier": "3.0.0",
+    "prop-types": "15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.46.0",
+    "rollup": "^3.26.2",
+    "rollup-plugin-dotenv": "^0.5.0",
+    "rollup-plugin-dts": "^5.3.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-terser": "^7.0.2",
+    "storybook": "7.0.27",
+    "styled-components": "^6.0.4",
+    "ts-jest": "^29.1.1",
+    "typescript": "^5.1.6"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "styled-components": "^6.0.4",
+    "typescript": "^5.1.6"
+  },
+  "eslintConfig": {
+    "extends": [
+      "plugin:storybook/recommended"
+    ]
+  }
+}

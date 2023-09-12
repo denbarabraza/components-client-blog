@@ -22,7 +22,6 @@ Your project needs to use React 16 or later. If you use older version of React.
 
 `yarn add components-client-blog`
 
-
 ## User guide
 
 ### Loader
@@ -125,12 +124,52 @@ Props:
   handleMenuOpen: () => void;
 ```
 
+### Input
+
+Example:
+
+``` jsx
+...
+
+import { Input } from 'components-client-blog';
+
+export const Main = () => {
+  ...
+
+  return (
+    <div ref={node}>
+     ...
+      <InputItem
+        borderColor = '#0000007F',
+        focusColor='#fbd050',
+        placeholder={'Enter value'}
+        value={value}
+        onChange={onChange}
+        data-cy={dataCy}
+      />
+    </div>
+  );
+};
+
+```
+
+Props:
+
+``` jsx
+  placeholder: string,
+  value: string
+  onChange: () => void
+  dataCy: string
+  borderColor: string
+  focusColor: string
+```
 
 ### APIs
 
-For [Loader](https://components-client-blog.vercel.app/?path=/story/reactcomponentlibrary-loader--loader-st)
-and [Button](https://components-client-blog.vercel.app/?path=/story/reactcomponentlibrary-button--button-st).
-and [BurgerMenu](https://components-client-blog.vercel.app/?path=/story/reactcomponentlibrary-burgermenu--burger-menu-st&globals=backgrounds.grid:!true;backgrounds.value:!hex(333333);measureEnabled:!true).
+For [Loader](https://components-client-blog.vercel.app/?path=/story/reactcomponentlibrary-loader--loader-st),
+ [Button](https://components-client-blog.vercel.app/?path=/story/reactcomponentlibrary-button--button-st),
+ [BurgerMenu](https://components-client-blog.vercel.app/?path=/story/reactcomponentlibrary-burgermenu--burger-menu-st&globals=backgrounds.grid:!true;backgrounds.value:!hex(333333);measureEnabled:!true),
+and [Input](https://components-client-blog.vercel.app/?path=/story/reactcomponentlibrary-input--input-st),
 
 
 

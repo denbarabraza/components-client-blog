@@ -1,4 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react';
+
 import { BurgerMenu } from '@/components/BurgerMenu/index.tsx';
 
 const meta: Meta<typeof BurgerMenu> = {
@@ -13,9 +14,6 @@ type Story = StoryObj<typeof BurgerMenu>;
 export const BurgerMenuSt: Story = {
   args: {
     open: true,
-    handleMenuOpen: () => {
-    },
+    handleMenuOpen: () => {},
   },
 };
-
-

@@ -21,7 +21,7 @@ export const styledValue: IStyledValue = {
     x36: '36px',
     x60: '60px',
   },
-  usedColors:{...usedColors},
+  usedColors: { ...usedColors },
   fontWeight: {
     light: 300,
     normal: 400,

@@ -1,8 +1,9 @@
 import React, { FC, memo } from 'react';
 
+import { Theme } from '@/components/Theme';
+
 import { IBurgerMenu } from './interface';
 import { StyledBurgerMenu } from './styled.ts';
-import { Theme } from '@/components/Theme';
 
 export const BurgerMenu: FC<IBurgerMenu> = memo(({ open, handleMenuOpen }) => {
   const handleOpen = () => {

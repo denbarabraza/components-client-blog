@@ -1,4 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react';
+
 import { Loader } from '@/components/Loader/index.tsx';
 
 const meta: Meta<typeof Loader> = {

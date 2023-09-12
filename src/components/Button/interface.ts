@@ -1,6 +1,6 @@
 export interface IButton {
   type?: 'submit' | 'button';
-  dataCy?:string;
+  dataCy?: string;
   title: string;
   backgroundColor: string;
   hoverColor: string;

@@ -35,7 +35,7 @@ export const spin = keyframes`
   }
 `;
 
-export const Spinner = styled.div<{ borderColor: string, borderTopColor: string }>`
+export const Spinner = styled.div<{ borderColor: string; borderTopColor: string }>`
   ${({ theme, borderColor, borderTopColor }) => css`
     display: inline-block;
     width: ${theme.valueInPercent.pr10};

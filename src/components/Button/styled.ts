@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 
-export const ButtonItem = styled.button<{ backgroundColor: string, hoverColor: string, }>`
+export const ButtonItem = styled.button<{ backgroundColor: string; hoverColor: string }>`
   ${({ theme, backgroundColor, hoverColor }) => css`
     display: flex;
     align-items: center;
